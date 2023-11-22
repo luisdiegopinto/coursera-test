@@ -33,7 +33,7 @@ body{
 .smallbox {
     border:1px solid black; 
     font-size: 25px;  
-    font-weight: 700;    
+    font-weight: 600;    
     width:40%;
     /*height: 15%;*/
     text-align: center;
@@ -131,8 +131,8 @@ body{
 
     /*extra options for the title and text boxes*/
     .block_1 section , .block_2 section  ,.block_3 section{
-        margin-left:6%;        
-        margin-right:6%;
+        margin-left:10%;        
+        margin-right:10%;
     }
 
 }
