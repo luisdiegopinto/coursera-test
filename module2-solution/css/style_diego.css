@@ -17,7 +17,6 @@ body{
  
 /* large cyan boxes containing the text */
 .bigbox {  
-    overflow:hidden;
     background-color: rgb(119, 253, 253);
     font-size: 20px;   
     border:1px solid black;     
