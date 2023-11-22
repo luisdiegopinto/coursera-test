@@ -17,13 +17,13 @@ body{
  
 /* large cyan boxes containing the text */
 .bigbox {  
-    overflow:auto;
+    overflow:hidden;
     background-color: rgb(119, 253, 253);
     font-size: 20px;   
     border:1px solid black;     
     padding:20px 10px 10px 10px ;
     margin:3%;  
-    height:250px;  
+    height:270px;  
     position:relative;
     left: 0;
     right: 0;
