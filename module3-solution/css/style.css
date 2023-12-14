@@ -1,1 +1,198 @@
+/* TEST!!! ROBA MIA !!! */
+.dispositivo{
+    font-size:0;
+}
 
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Comic Neue', cursive;
+}
+
+#header-nav {
+    border: 4px solid black;
+    border-left:0;
+    border-right: 0;
+    border-radius: 0;
+    min-height: 100px;  /***************************/
+    margin-bottom:0px;
+    background-color: rgb(189, 255, 233);
+}
+#header-nav .container{
+    width: 100%;
+    /*height: 100%;*/
+    padding :0;
+}
+
+
+.navbar-header{
+    position: relative;  
+    top: 0;
+    left :0;
+    /*height: 100%;*/
+    min-height: 100px;   /*********************************/
+ 
+}
+
+ 
+.navbar-brand h1 {   /*il nome del brand Food, LLC*/
+    color:black;
+    font-weight: bold;
+    margin-left: 50px; 
+    margin-top:8px;  
+}
+
+.navbar-header button.navbar-toggle{    /*Bottone navigatore*/
+    position: absolute;
+    right:5%;
+    top:12px;
+    height: 70px;
+    width: 70px;
+    margin-top:0;
+}
+
+.navbar-header button.navbar-toggle {/*Bottone navigatore*/
+    border: 2px solid #000; /*#61122f; */
+    padding-top:0;
+    padding-bottom:0;
+    padding-left:7px;
+    padding-right:7px;
+    background-color: rgb(189, 255, 233);
+    clear:both;
+}
+.navbar-header button.navbar-toggle:hover {
+    background-color:rgb(0, 255, 26);
+}
+
+.navbar-header button.navbar-toggle:focus {
+    background-color:  rgb(0, 229, 255);
+}
+
+/*https://stackoverflow.com/questions/32864415/how-can-i-increase-the-size-of-a-bootstrap-button*/
+/*https://stackoverflow.com/questions/20540563/change-icon-bar-color-in-bootstrap*/
+.navbar-header .icon-bar{ /* non si capisce perchè se scrivo button .icon-bar, la lunghezza non funziona*/
+    /*scale: 1.5;*/
+    margin-top:0;
+    border: 0px solid #000000 ; 
+    border-radius: 3px;
+    background-color: #000000  !important;
+    width:100%;
+    height: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.icon-bar1{
+    position:relative;
+    top:-10px;   
+}
+.icon-bar2{
+    position:relative;
+    top:0px;   
+}
+.icon-bar3{
+    position:relative;
+    top:10px;   
+}
+
+/*.navbar-header .icon-bar.invisibile{
+    border-color: white;
+}*/
+
+/*MENU A COMPARSA */
+#collapsable-nav{ /*box principale del menu a comparsa*/
+    /*in alternativa
+    position:absolute;
+    top:96px;
+    */
+    border: 0px solid black;
+    background-color:none; /* rgb(189, 255, 233);*/
+    top:0px;
+    left:0px;
+    width:100%;
+    height: 106px;
+    margin-left:0;
+    margin-right: 0;
+    margin-top:0;
+    margin-bottom: 0;
+    padding: 0 0 0 0;
+
+}
+ 
+#nav-list{ /*stile di tutta la unordered list ul  del navigatore*/
+    max-height: 105px !important;
+    margin-top: 0px;
+    margin-bottom:0px;
+    margin-left:0;
+    margin-right: 0;   
+    background-color:  rgb(189, 255, 201); 
+    text-align: center; 
+    padding: 0 0 0 0 ;
+    border-top: 3px solid #000;
+   /*border-left: 4px solid #000;    */
+   overflow: hidden; /*************************************/
+}
+
+#nav-list a   { 
+    font-size: 1.3em;
+    color: #000;
+    vertical-align: middle;
+}
+#nav-list li{
+    border: 1px solid black;
+    height:35px; 
+    padding:0 0 0 0;
+    margin-bottom:0;
+    margin-top: 0;
+    position:relative;
+} 
+/* perchè il resto del sito non viene spostato sotto quando apro il menu a comparsa
+https://stackoverflow.com/questions/22564817/bootstrap-collapsed-menu-not-pushing-content-down-when-expanded
+*/
+
+
+/*##################### FINE DELL'HEADER *********************/
+/*##################### COMINCIA LA PAGINA CENTRALE*********************/
+
+
+.titolo_iniziale h2{
+    text-align: center;
+    color: #000;
+    margin-top: 10px;
+}
+
+
+#main-content{
+    padding:0px;
+    margin-left:15px;
+    margin-right:15px;
+    margin-top:35px;
+    height: 1000px;
+    background-color: rgb(255, 255, 255);
+
+}
+#main-content .pannellone{ /*se non specifico che .jumbotron sta dentro main-content, non mi prende i comandi, chissa perche*/
+ 
+    background-color: rgb(86, 137, 255);
+    margin-right:0;
+    border-radius: 0;
+    padding-top:20px;
+    padding-left: 10px;
+    padding-right:10px;
+    border: 0;
+    height: 1000px;
+    width: 100% ; /*rispetto al genitore "main-content" */
+    color: #000;
+    overflow: hidden;
+    /*display:none;*/
+}
+
+#main-content .pannellone h4{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.pannellone  .testo_principale{
+    text-align: left;
+}
+ 
+
+ 
