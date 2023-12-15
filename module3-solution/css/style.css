@@ -154,7 +154,7 @@ https://stackoverflow.com/questions/22564817/bootstrap-collapsed-menu-not-pushin
 
 
 .titolo_iniziale h2{
-    text-align: center;
+    /*text-align: center;   DEVO USARE LA CLASSE DI BOOTSTRAP PER CENTRARE IL TESTO*/ 
     color: #000;
     margin-top: 10px;
 }
@@ -174,7 +174,7 @@ https://stackoverflow.com/questions/22564817/bootstrap-collapsed-menu-not-pushin
     background-color: rgb(86, 137, 255);
     margin-right:0;
     border-radius: 0;
-    padding-top:20px;
+    padding-top:5px;
     padding-left: 10px;
     padding-right:10px;
     border: 0;
@@ -182,12 +182,14 @@ https://stackoverflow.com/questions/22564817/bootstrap-collapsed-menu-not-pushin
     width: 100% ; /*rispetto al genitore "main-content" */
     color: #000;
     overflow: hidden;
+ 
     /*display:none;*/
 }
 
-#main-content .pannellone h4{
+#main-content .pannellone h3{
     text-align: center;
-    margin-top: 5px;
+    margin-top: 2px;
+    font-size: 1.45em;
 }
 
 .pannellone  .testo_principale{
