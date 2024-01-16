@@ -83,19 +83,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,
-  buildAndShowHomeHTML ,
+  buildAndShowHomeHTML  ,
   // ***** <---- TODO: STEP 1: Substitute [...] ******
   true); // Explicitly setting the flag to get JSON from server processed into an object literal
 });
 // *** finish **
- /*function (categories){
-    //var categories = JSON.parse(request.responseText);    
-    buildAndShowHomeHTML(categories);
-  } */
-   
-  
  
-
  
 // Builds HTML for the home page based on categories array
 // returned from the server.
@@ -113,7 +106,7 @@ function buildAndShowHomeHTML (categories) {
       // var chosenCategoryShortName = ....
       var randomCategoryDiego = chooseRandomCategory(categories) ; 
       var chosenCategoryShortName = randomCategoryDiego.short_name ;
-      console.log("ho fgatto lo step 2");
+      ////console.log("ho fatto lo step 2");
 
       // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
       // chosen category from STEP 2. Use existing insertProperty function for that purpose.
@@ -129,7 +122,7 @@ function buildAndShowHomeHTML (categories) {
       // var homeHtmlToInsertIntoMainPage = ....
       //var parte_di_homeHtml = document.getElementById("home-tiles").innerHTML;
       var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml,"randomCategoryShortName","'"+chosenCategoryShortName+"'");
-      console.log("ho fgatto lo step 3");
+      ////console.log("ho fatto lo step 3");
       
 
       // TODO: STEP 4: Insert the produced HTML in STEP 3 into the main page
